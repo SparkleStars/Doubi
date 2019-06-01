@@ -1018,9 +1018,9 @@ Install_Libsodium(){
 		echo -e "${Info} 安装依赖..."
 		yum -y groupinstall "Development Tools"
 		echo -e "${Info} 下载..."
-		wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/archive/${Libsodiumr_ver}.tar.gz"
+		wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/archive/1.0.18.tar.gz"
 		echo -e "${Info} 解压..."
-		tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
+		tar -xzf libsodium-1.0.18.tar.gz && cd libsodium-1.0.18
 		echo -e "${Info} 编译安装..."
 		./configure --disable-maintainer-mode && make -j2 && make install
 		echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
@@ -1029,9 +1029,9 @@ Install_Libsodium(){
 		echo -e "${Info} 安装依赖..."
 		apt-get install -y build-essential
 		echo -e "${Info} 下载..."
-		wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/archive/${Libsodiumr_ver}.tar.gz"
+		wget  --no-check-certificate -N "https://github.com/jedisct1/libsodium/archive/1.0.18.tar.gz"
 		echo -e "${Info} 解压..."
-		tar -xzf libsodium-${Libsodiumr_ver}.tar.gz && cd libsodium-${Libsodiumr_ver}
+		tar -xzf libsodium-1.0.18.tar.gz && cd libsodium-1.0.18
 		echo -e "${Info} 编译安装..."
 		./configure --disable-maintainer-mode && make -j2 && make install
 	fi
