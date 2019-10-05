@@ -7,7 +7,7 @@ export PATH
 #	Description: Install the ShadowsocksR mudbjson server
 #	Version: 1.0.26
 #	Author: Toyo
-#	Blog: https://doub.io/ss-jc60/
+#	Blog: langhuayun.ga
 #=================================================
 
 sh_ver="1.0.26"
