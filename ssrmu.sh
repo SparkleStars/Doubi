@@ -478,7 +478,7 @@ Set_config_protocol(){
  ${Green_font_prefix}5.${Font_color_suffix} auth_chain_a
  ${Green_font_prefix}6.${Font_color_suffix} auth_chain_b
  ${Tip} 如果使用 auth_chain_* 系列协议，建议加密方式选择 none (该系列协议自带 RC4 加密)，混淆随意" && echo
-	read -e -p "(默认: 3. auth_aes128_md5):" ssr_protocol
+	read -e -p "(默认: 1. origin):" ssr_protocol
 	[[ -z "${ssr_protocol}" ]] && ssr_protocol="3"
 	if [[ ${ssr_protocol} == "1" ]]; then
 		ssr_protocol="origin"
